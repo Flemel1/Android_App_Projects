@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="70dp"
+        android:text="@string/header"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+    <EditText
+        android:id="@+id/ed_idBuku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="70dp"
+        android:hint="@string/id_buku"
+        android:textSize="20sp"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/ed_namaBuku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="70dp"
+        android:hint="@string/nama"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/ed_penulisBuku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="70dp"
+        android:hint="@string/penulis"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/ed_penerbitBuku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="70dp"
+        android:hint="@string/penerbit"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/ed_tahunTerbit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="70dp"
+        android:hint="@string/tahun"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="70dp"
+        android:hint="@string/submit"
+        android:textSize="20sp"
+        android:background="@color/button"
+        android:textColor="@color/textButton"/>
+</LinearLayout>

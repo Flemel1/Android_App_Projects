@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_alignParentRight="true"
+        android:onClick="update"/>
+
+
+    <TextView
+        android:id="@+id/txtBulan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Bulan"/>
+
+    <TextView
+        android:id="@+id/txtMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Money"
+        android:layout_below="@+id/txtBulan"/>
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Date"
+        android:layout_below="@id/txtMoney"/>
+
+    <TextView
+        android:id="@+id/txtID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="ID"
+        android:visibility="gone"
+        android:layout_below="@id/txtDate"/>
+
+</RelativeLayout>
