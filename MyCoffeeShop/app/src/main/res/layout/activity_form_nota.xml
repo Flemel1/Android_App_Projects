@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".form_nota">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:fontFamily="sans-serif-light"
+        android:textSize="26sp"
+        android:textColor="#000000"
+        android:text="Nota Pembayaran"/>
+
+    <TextView
+        android:id="@+id/tv_total_bayar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-light"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:text="Total Bayar: Rp.0"/>
+
+    <ListView
+        android:id="@+id/list_barang_nota"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"/>
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:background="#004a2f"
+        android:text="selesai"
+        android:onClick="deleteNota"/>
+
+</LinearLayout>
