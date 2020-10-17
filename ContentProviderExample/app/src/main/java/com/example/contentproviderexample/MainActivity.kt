@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
                     token?.continuePermissionRequest()
                 }
 
-            }).check()
+            }).onSameThread().check()
     }
 
     private fun openSettingPermission() {
@@ -99,5 +99,10 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         requestPermissions()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.i(TAG, "App is destroy")
     }
 }
