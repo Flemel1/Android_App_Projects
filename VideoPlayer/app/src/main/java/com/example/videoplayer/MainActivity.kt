@@ -29,7 +29,11 @@ class MainActivity : AppCompatActivity(), Player.EventListener {
     private val KEY = "playPosition"
     private lateinit var simpleExoplayer: SimpleExoPlayer
     private var playbackPosition: Long = 0
-    private val mp4Url = "/storage/0403-0201/video/UCDownloads/SnS-S5-13 END -480p-SAMEHADAKU.VIP.mkv"
+
+    //use this variable in function initializePlayer to play video on internet
+    private val videoUrl = "https://html5demos.com/assets/dizzy.mp4"
+    //use this variable in function initializePlayer to play video on device
+    private val videoPath = "/storage/0403-0201/video/UCDownloads/SnS-S5-13 END -480p-SAMEHADAKU.VIP.mkv"
 
     private val dataSourceFactory: DataSource.Factory by lazy {
         DefaultDataSourceFactory(this, "exoplayer-sample")
@@ -88,7 +92,7 @@ class MainActivity : AppCompatActivity(), Player.EventListener {
 
     private fun initializePlayer(position: Long) {
         simpleExoplayer = SimpleExoPlayer.Builder(this).build()
-        preparePlayer(mp4Url)
+        preparePlayer(videoUrl)
         exoplayerView.player = simpleExoplayer
         simpleExoplayer.seekTo(position)
         simpleExoplayer.playWhenReady = true
@@ -96,6 +100,7 @@ class MainActivity : AppCompatActivity(), Player.EventListener {
     }
 
     private fun buildMediaSource(uri: Uri): MediaSource {
+        //create media from uri
         return ProgressiveMediaSource.Factory(dataSourceFactory)
                 .createMediaSource(uri)
     }
