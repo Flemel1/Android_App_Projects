@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.inventorysystemapp.ui.UserFragment"
+        android:label="@string/user_page"
+        tools:layout="@layout/fragment_user" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.inventorysystemapp.ui.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_move_to_insert_item_stock_fragment"
+            app:destination="@id/insertStockItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/logoutFragment"
+        android:name="com.example.inventorysystemapp.ui.LogoutFragment"
+        android:label="@string/logout"
+        tools:layout="@layout/fragment_logout" />
+    <fragment
+        android:id="@+id/insertStockItemFragment"
+        android:name="com.example.inventorysystemapp.ui.InsertStockItemFragment"
+        android:label="Insert Stock Item"
+        tools:layout="@layout/fragment_insert_stock_item" />
+    <fragment
+        android:id="@+id/managementStockFragment"
+        android:name="com.example.inventorysystemapp.ui.ManagementStockFragment"
+        android:label="@string/management"
+        tools:layout="@layout/fragment_management_stock" >
+        <action
+            android:id="@+id/action_managementStockFragment_to_insertIncomeOutcomeFragment"
+            app:destination="@id/insertIncomeOutcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/insertIncomeOutcomeFragment"
+        android:name="com.example.inventorysystemapp.ui.InsertIncomeOutcomeFragment"
+        android:label="fragment_insert_income_outcome"
+        tools:layout="@layout/fragment_insert_income_outcome" />
+</navigation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header_layout_padding_top">12dp</dimen>
+    <dimen name="header_layout_padding_right">16dp</dimen>
+    <dimen name="header_layout_padding_left">16dp</dimen>
+    <dimen name="header_layout_padding_bottom">16dp</dimen>
+    <dimen name="font_size_header_name">16sp</dimen>
+    <dimen name="margin_bottom_textview_user_item">15dp</dimen>
+    <dimen name="margin_top_textview_user_item">15dp</dimen>
+</resources>

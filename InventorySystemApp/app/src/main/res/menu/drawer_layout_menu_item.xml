@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/homeFragment"
+            android:title="@string/home"
+            android:icon="@drawable/ic_home"/>
+
+        <item
+            android:id="@+id/userFragment"
+            android:title="@string/user_page"
+            android:icon="@drawable/ic_account" />
+
+        <item
+            android:id="@+id/managementStockFragment"
+            android:title="@string/management"
+            android:icon="@drawable/ic_management"/>
+
+        <item
+            android:id="@+id/logoutFragment"
+            android:title="@string/logout"
+            android:icon="@drawable/ic_logout"/>
+
+    </group>
+
+</menu>

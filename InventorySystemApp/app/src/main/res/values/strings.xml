@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Inventory System App</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="greeting">Welcome Back</string>
+    <string name="jumlah">Jumlah</string>
+    <string name="textview_sum_items">0</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="barang">Barang</string>
+    <string name="goods_id">ID Barang</string>
+    <string name="goods_name">Nama Barang</string>
+    <string name="goods_stock">Stok Barang</string>
+    <string name="image_header_description">This is imageview header</string>
+    <string name="name_user">Daniel Lelonu</string>
+    <string name="status_role">Admin</string>
+    <string name="login1">Login</string>
+    <string name="home">Home</string>
+    <string name="insert">Insert</string>
+    <string name="user_page">User</string>
+    <string name="button_add_stcok_desc">Add Item Stock</string>
+    <string name="id_barang_text_input_hint">ID Barang</string>
+    <string name="nama_barang_text_input_hint">Nama Barang</string>
+    <string name="stock_barang_text_input_hint">Stock Barang</string>
+    <string name="insert_stock_item">Insert Item</string>
+    <string name="button_add_user">Button Add User</string>
+    <string name="management">Management</string>
+    <string name="delete_item">Delete Item</string>
+    <string name="logout">Logout</string>
+</resources>

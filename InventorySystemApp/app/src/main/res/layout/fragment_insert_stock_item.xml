@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.InsertStockItemFragment">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="@string/id_barang_text_input_hint"
+            android:textColorHint="@color/black"
+            app:boxBackgroundColor="#FFFFFF"
+            app:hintTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_input_id_barang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="@string/nama_barang_text_input_hint"
+            android:textColorHint="@color/black"
+            app:boxBackgroundColor="#FFFFFF"
+            app:hintTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_input_nama_barang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="@string/stock_barang_text_input_hint"
+            android:textColorHint="@color/black"
+            app:boxBackgroundColor="#FFFFFF"
+            app:hintTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_input_stock_barang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_insert_stock_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="@string/insert_stock_item"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:background="@color/cardview_shadow_end_color"
+            app:icon="@drawable/ic_add"
+            app:iconTint="@color/black"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_delete_stock_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="@string/delete_item"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:background="@color/cardview_shadow_end_color"
+            app:icon="@drawable/ic_delete"
+            app:iconTint="@color/black"/>
+
+    </LinearLayout>
+</layout>
