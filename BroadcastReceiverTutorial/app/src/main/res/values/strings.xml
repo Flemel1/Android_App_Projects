@@ -1,4 +1,0 @@
-<resources>
-    <string name="app_name">Broadcast Receiver Tutorial</string>
-    <string name="channel_name">Notification Wifi State</string>
-</resources>

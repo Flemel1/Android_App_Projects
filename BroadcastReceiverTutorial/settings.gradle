@@ -1,2 +1,0 @@
-include ':app'
-rootProject.name = "Broadcast Receiver Tutorial"
