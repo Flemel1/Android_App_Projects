@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/homeFragment"
+        android:title="@string/home_bottom_nav"
+        android:icon="@drawable/home"/>
+
+    <item android:id="@+id/infoFragment"
+        android:title="@string/info_bottom_nav"
+        android:icon="@drawable/info"/>
+
+    <item android:id="@+id/bantuanFragment"
+        android:title="@string/bantuan_bottom_nav"
+        android:icon="@drawable/help"/>
+
+</menu>

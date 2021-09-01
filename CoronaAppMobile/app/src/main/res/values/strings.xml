@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Corona Appr</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_bottom_nav">Home</string>
+    <string name="info_bottom_nav">Info</string>
+    <string name="bantuan_bottom_nav">Bantuan</string>
+    <!--    title & desc info menu-->
+    <string-array name="title_info_menu">
+        <item>Cuci Tangan</item>
+        <item>Gunakan Masker</item>
+        <item>Jaga jarak</item>
+    </string-array>
+    <string-array name="desc_info_menu">
+        <item>Selalu mencuci tangan anda
+        ketika selesai melakukan kegiatan
+        diluar rumah.
+        </item>
+        <item>Gunakan masker dengan baik dan
+        benar ketika berada diluar rumah.
+        </item>
+        <item>Jaga jarak dengan orang lain
+        minimal 2 meter untuk mencegah
+        penularan covid-19.
+        </item>
+    </string-array>
+    <!--    title bantuan menu-->
+    <string-array name="title_bantuan_menu">
+        <item>Hotline kami</item>
+        <item>Informasi lebih lanjut</item>
+    </string-array>
+</resources>

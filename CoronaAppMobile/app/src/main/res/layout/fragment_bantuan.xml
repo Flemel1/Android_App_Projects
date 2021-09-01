@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/bantuan_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/illustration_bantuan_screen"
+        android:orientation="vertical"
+        android:weightSum="10"
+        tools:context=".app.presentation.BantuanFragment">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:scaleType="centerCrop"
+            android:src="@drawable/illustration_bantuan_screen" />
+
+        <LinearLayout
+            android:id="@+id/bantuan_menu_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:background="@drawable/container_background"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Pusat Bantuan"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_bantuan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                tools:listitem="@layout/bantuan_item" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>
