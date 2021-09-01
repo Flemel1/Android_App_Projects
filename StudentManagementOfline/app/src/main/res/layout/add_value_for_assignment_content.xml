@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="listener"
+            type="com.example.studentmanagementoffline.app.presentation.AddValueAssignmentFragment" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_round"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_header_siswa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/student_name_sample"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_header"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/assignment_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="20dp"
+                android:background="@color/black"
+                android:prompt="@string/pilih_tugas"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textfield_value_for_assignment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:hint="Nilai Tugas"
+                android:textColorHint="@color/blue_6598F1"
+                app:boxStrokeColor="@color/blue_6598F1"
+                app:boxStrokeWidth="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/button_add_value_assignment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#59D672"
+                android:shadowDx="5"
+                android:shadowDy="6"
+                android:onClick="@{() -> listener.insertNilai()}"
+                android:text="Tambah" />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</layout>

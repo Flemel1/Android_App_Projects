@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.studentmanagementoffline.app.presentation.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/assignmentFragment"
+        android:name="com.example.studentmanagementoffline.app.presentation.AssignmentFragment"
+        android:label="fragment_assignment"
+        tools:layout="@layout/fragment_assignment" >
+        <action
+            android:id="@+id/action_assignmentFragment_to_addAssignmentFragment"
+            app:destination="@id/addAssignmentFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/classFragment"
+        android:name="com.example.studentmanagementoffline.app.presentation.ClassFragment"
+        android:label="fragment_class"
+        tools:layout="@layout/fragment_class" >
+        <action
+            android:id="@+id/action_classFragment_to_addClassFragment"
+            app:destination="@id/addClassFragment" />
+        <action
+            android:id="@+id/action_listStudentByClass"
+            app:destination="@id/listStudentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addValueAssignmentFragment"
+        android:name="com.example.studentmanagementoffline.app.presentation.AddValueAssignmentFragment"
+        android:label="AddValueAssignmentFragment" />
+    <fragment
+        android:id="@+id/addAssignmentFragment"
+        android:name="com.example.studentmanagementoffline.app.presentation.AddAssignmentFragment"
+        android:label="AddAssignmentFragment" />
+    <fragment
+        android:id="@+id/addClassFragment"
+        android:name="com.example.studentmanagementoffline.app.presentation.AddClassFragment"
+        android:label="AddClassFragment" />
+    <fragment
+        android:id="@+id/addStudentFragment"
+        android:name="com.example.studentmanagementoffline.app.presentation.AddStudentFragment"
+        android:label="AddStudentFragment" >
+        <argument
+            android:name="className"
+            app:argType="string"
+            android:defaultValue="Nothing" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapelFragment"
+        android:name="com.example.studentmanagementoffline.app.presentation.MapelFragment"
+        android:label="fragment_mapel"
+        tools:layout="@layout/fragment_mapel" >
+        <action
+            android:id="@+id/action_mapelFragment_to_addMapelFragment"
+            app:destination="@id/addMapelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMapelFragment"
+        android:name="com.example.studentmanagementoffline.app.presentation.AddMapelFragment"
+        android:label="fragment_add_mapel"
+        tools:layout="@layout/fragment_add_mapel" />
+    <fragment
+        android:id="@+id/listStudentFragment"
+        android:name="com.example.studentmanagementoffline.app.presentation.ListStudentFragment"
+        android:label="fragment_list_student"
+        tools:layout="@layout/fragment_list_student" >
+        <argument
+            android:name="className"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_AddStudent"
+            app:destination="@id/addStudentFragment" />
+        <action
+            android:id="@+id/action_listStudentFragment_to_scoreFragment"
+            app:destination="@id/scoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scoreFragment"
+        android:name="com.example.studentmanagementoffline.app.presentation.ScoreFragment"
+        android:label="fragment_score"
+        tools:layout="@layout/fragment_score" >
+        <action
+            android:id="@+id/action_scoreFragment_to_addValueAssignmentFragment"
+            app:destination="@id/addValueAssignmentFragment" />
+    </fragment>
+</navigation>

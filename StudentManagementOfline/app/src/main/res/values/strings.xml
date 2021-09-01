@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Student Management Offline</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_header_one">Kelas</string>
+    <string name="text_header_two">Tugas</string>
+    <string name="placeholder_class_name">Class Name</string>
+    <string name="placeholder_description">Keterangan : Tugas halaman 60</string>
+    <string name="placheholder_deadline">Deadline : 10 Februari 2020</string>
+    <string name="text_field_placeholder">Ketik Disini</string>
+    <string name="student_name_sample">Budi</string>
+    <string name="mapel">Mapel</string>
+    <string name="class_name_sample">XII-A</string>
+    <string name="kelas">Kelas</string>
+    <string name="pilih_kelas">Pilih Kelas</string>
+    <string name="pilih_mapel">Pilih Mapel</string>
+    <string name="pilih_tugas">Pilih Tugas</string>
+</resources>
